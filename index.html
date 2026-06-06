@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEVIO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+min-height:100vh;
+overflow-x:hidden;
+}
+
+.container{
+padding:20px;
+max-width:430px;
+margin:auto;
+}
+
+.logo{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:10px;
+margin-bottom:20px;
+font-size:34px;
+font-weight:700;
+color:#d4af37;
+letter-spacing:4px;
+}
+
+.balance-label{
+color:#888;
+font-size:16px;
+margin-bottom:10px;
+}
+
+.balance{
+font-size:56px;
+font-weight:800;
+line-height:1;
+margin-bottom:10px;
+}
+
+.growth{
+display:inline-block;
+background:#0d1f5a;
+color:#4c7dff;
+padding:10px 16px;
+border-radius:30px;
+font-weight:600;
+margin-bottom:25px;
+}
+
+.hero{
+position:relative;
+height:240px;
+border-radius:30px;
+overflow:hidden;
+margin-bottom:25px;
+background:
+linear-gradient(to bottom,
+rgba(0,0,0,.2),
+rgba(0,0,0,.9)),
+url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1200');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+position:absolute;
+left:20px;
+bottom:20px;
+}
+
+.actions{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-bottom:25px;
+}
+
+.action{
+background:#080808;
+border:1px solid rgba(255,255,255,.06);
+border-radius:24px;
+padding:18px 10px;
+text-align:center;
+}
+
+.action-icon{
+font-size:26px;
+margin-bottom:10px;
+color:#4b6fff;
+}
+
+.card{
+height:210px;
+border-radius:28px;
+padding:25px;
+position:relative;
+overflow:hidden;
+background:
+linear-gradient(135deg,#0a0a0a,#141414,#000);
+border:1px solid rgba(212,175,55,.25);
+box-shadow:0 0 30px rgba(212,175,55,.15);
+margin-bottom:25px;
+}
+
+.card-title{
+color:#d4af37;
+font-size:28px;
+letter-spacing:5px;
+}
+
+.card-number{
+position:absolute;
+bottom:35px;
+left:25px;
+font-size:26px;
+letter-spacing:3px;
+}
+
+.visa{
+position:absolute;
+right:25px;
+bottom:30px;
+font-size:40px;
+font-weight:800;
+color:#d4af37;
+}
+
+.ai-card{
+background:#070707;
+border-radius:28px;
+padding:25px;
+border:1px solid rgba(70,90,255,.2);
+margin-bottom:25px;
+}
+
+.ai-title{
+color:#4b6fff;
+font-size:14px;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.ai-text{
+font-size:34px;
+font-weight:700;
+line-height:1.2;
+}
+
+.ai-text span{
+color:#4b6fff;
+}
+
+.spending{
+background:#080808;
+padding:25px;
+border-radius:28px;
+}
+
+.spending-title{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.ring{
+width:180px;
+height:180px;
+border-radius:50%;
+margin:auto;
+background:
+conic-gradient(
+#4b6fff 0 35%,
+#7f6bff 35% 60%,
+#67d7ff 60% 85%,
+#d4af37 85% 100%
+);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.ring-inner{
+width:130px;
+height:130px;
+border-radius:50%;
+background:#000;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+height:85px;
+background:#050505;
+display:flex;
+justify-content:space-around;
+align-items:center;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+.nav-item{
+color:#777;
+font-size:14px;
+}
+
+.active{
+color:#d4af37;
+}
+
+.ai-btn{
+width:70px;
+height:70px;
+background:#2345ff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+box-shadow:0 0 30px rgba(35,69,255,.8);
+margin-top:-30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">LEVIO</div>
+
+<div class="hero">
+<div class="hero-content">
+<div class="balance-label">Total Balance</div>
+<div class="balance">$12,480.32</div>
+<div class="growth">+12.4% this month</div>
+</div>
+</div>
+
+<div class="actions">
+
+<div class="action">
+<div class="action-icon">↗</div>
+Send
+</div>
+
+<div class="action">
+<div class="action-icon">↓</div>
+Receive
+</div>
+
+<div class="action">
+<div class="action-icon">↺</div>
+Exchange
+</div>
+
+<div class="action">
+<div class="action-icon">▣</div>
+Cards
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-title">
+LEVIO BLACK
+</div>
+
+<div class="card-number">
+•••• 1457
+</div>
+
+<div class="visa">
+VISA
+</div>
+
+</div>
+
+<div class="ai-card">
+
+<div class="ai-title">
+AI INSIGHT
+</div>
+
+<div class="ai-text">
+You spent <span>18%</span> less this month
+</div>
+
+</div>
+
+<div class="spending">
+
+<div class="spending-title">
+Spending Overview
+</div>
+
+<div class="ring">
+
+<div class="ring-inner">
+<h2>$3,457</h2>
+<p>Total Spent</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="bottom-nav">
+
+<div class="nav-item active">Home</div>
+<div class="nav-item">Wealth</div>
+
+<div class="ai-btn">✦</div>
+
+<div class="nav-item">Activity</div>
+<div class="nav-item">Rewards</div>
+
+</div>
+
+</body>
+</html>
